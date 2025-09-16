@@ -1,0 +1,182 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #05283b;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #b6b3b3;
+    border-radius: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#nome {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#profissão {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+header ul li {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #0077b5;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #005582;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+    transition: transform 0.3s;
+}
+
+header ul li a:hover img {
+    transform: scale(1.2);
+}
+
+#resumo {
+    text-align: center;
+    max-width: 700px;
+    margin: 20px auto 40px auto;
+    background-color: #b6b3b3;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section {
+    background-color: #b6b3b3;
+    padding: 25px 20px; 
+    margin-bottom: 30px; 
+    border-radius: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+h2 {
+    border-bottom: 2px solid #b6b3b3;
+    padding-bottom: 8px; 
+    margin-bottom: 40px;
+    font-size: 22px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px; 
+}
+
+li ul {
+    padding-left: 20px;
+    margin-top: 8px; 
+}
+
+li ul li {
+    margin-bottom: 6px; 
+}
+
+a {
+    color: #0077b5;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+a:hover {
+    color: #005582;
+    text-decoration: underline;
+}
+
+#experiencia ul > li {
+    margin-bottom: 25px; 
+}
+
+#experiencia ul > li strong {
+    display: block;
+}
+
+#formacao ul > li {
+    margin-bottom: 20px;
+}
+
+#formacao ul > li strong {
+    display: block;
+    margin-bottom: 3px;
+}
+
+#habilidades ul > li {
+    margin-bottom: 10px;
+}
+
+#projetos ul > li {
+    margin-bottom: 25px;
+}
+
+#projetos ul > li strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+header:hover,
+#resumo:hover,
+section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 600px) {
+    header ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    #nome {
+        font-size: 28px;
+    }
+
+    #profissão {
+        font-size: 16px;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
